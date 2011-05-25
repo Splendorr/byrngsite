@@ -1,0 +1,56 @@
+<!doctype html>
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title The 1140px Grid · Fluid down to mobile
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    / 1140px Grid styles for IE
+    /[if lte IE 9] <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+    / The 1140px Grid - http://cssgrid.net/
+    %link{:href => "css/1140.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    / Your styles
+    %link{:href => "css/styles.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    / css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers
+    %script{:src => "js/css3-mediaqueries.js", :type => "text/javascript"}
+    / Delete embedded styles, just for example.
+    :css
+      body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      
+      .container p {
+      color: #000;
+      line-height: 1.4em;
+      background: #fff;
+      text-align: left;
+      margin: 0 0 0 0;
+      }
+      
+      .center {
+      text-align: center;
+      }
+      
+        %body
+    .container
+      .row
+        .twocol
+        .eightcol
+          %img{ :src => "i/byrngheader.png", :alt => "byrng: a minecraft server"}
+        .twocol.last
+      /.row
+      /  .twocol
+      /  .eightcol.center
+      /    %a{:href => "http://minecraftviewer.com/servers/1424/view", :target => "_blank"}
+      /      %img{:alt => "Server Banner", :src => "http://cache.multiplayuk.com/b/1-1424-560x95.png", :style => "border:0;width:560px;height:95"}/
+      /  .twocol.last
+        
+      .row
+        .twocol
+        .fourcol
+          %h2 Byrng is a Minecraft server maintained by Splendorr. 
+        .fourcol
+          %p Current Online Status:
+          %a{:href => "http://minecraftviewer.com/servers/1424/view", :target => "_blank"}
+            %img{:alt => "Server Banner", :src => "http://cache.multiplayuk.com/b/1-1424-350x20-171717-303030-000000-FFFFFF.png", :style => "border:0;width:350px;height:20"}/
+          %p what
+        .twocol.last
