@@ -2,7 +2,7 @@
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <title>The 1140px Grid · Fluid down to mobile</title>
+    <title>Byrng</title>
     <meta content='width=device-width, initial-scale=1.0' name='viewport' />
     <!-- 1140px Grid styles for IE -->
     <!--[if lte IE 9]> <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /> <![endif]-->
@@ -17,10 +17,19 @@
       /*<![CDATA[*/
         body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #424242;
+        font-size: 13px;
+        padding-bottom: 12em
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+        line-height: 1.2em;
+        margin-bottom: 0em;
+        padding-bottom: 0em;
         }
         
         .container p {
-        color: #000;
+        font-size: 1em;
         line-height: 1.4em;
         background: #fff;
         text-align: left;
@@ -31,9 +40,25 @@
         text-align: center;
         }
         
-          %body
+        .bitabove {
+        padding-top: 2px;
+        }
+        
+        .spaceafter {
+        padding-bottom: 1em;
+        }
+        
+        #inset1 {
+          padding-left: 1em;
+        }
+        
+        .listsmaller {
+          font-size: .9em;
+        }
       /*]]>*/
     </style>
+  </head>
+  <body>
     <div class='container'>
       <div class='row'>
         <div class='twocol'></div>
@@ -51,17 +76,66 @@
       <div class='row'>
         <div class='twocol'></div>
         <div class='fourcol'>
-          <h2>Byrng is a Minecraft server maintained by Splendorr.</h2>
+          <h2 class='spaceafter'>Byrng is a Minecraft server maintained by Splendorr.</h2>
+          <p class='spaceafter'>
+            Currently Running Minecraft 1.5_02, with
+            <a href='http://bukkit.org'>Bukkit</a>
+            build 803.
+          </p>
+          <p class='spaceafter'>We are waiting until 1.6 stabilizes and Bukkit releases a compatible version before upgrading the server. Please do not update your client to 1.6 until this page is updated.</p>
+          <p class='spaceafter'>
+            If you are new to the server and have not been added to the Regulars list yet, you will be unable to make any changes to the world. Send an email to the address shown in chat when you log in, and I can add you to the list. This is to prevent Griefers and Antagonists from Screwing with Stuff. Presumably.
+          </p>
         </div>
         <div class='fourcol'>
-          <p>Current Online Status:</p>
+          <h3>Server Address:</h3>
+          <p class='spaceafter'>
+            <a href='minecraft://www.minecraft.net/play.jsp?ip=209.15.226.33&amp;port=27765'>203.15.226.33:27765</a>
+          </p>
+          <h3>Current Online Status:</h3>
           <a href='http://minecraftviewer.com/servers/1424/view' target='_blank'>
-            <img alt='Server Banner' src='http://cache.multiplayuk.com/b/1-1424-350x20-171717-303030-000000-FFFFFF.png' style='border:0;width:350px;height:20' />
+            <img alt='Server Banner' class='bitabove spaceafter' src='http://cache.multiplayuk.com/b/1-1424-350x20-171717-303030-000000-FFFFFF.png' style='border:0;width:350px;height:20' />
           </a>
-          <p>what</p>
+          <br />
+          <h3>Installed Plugins:</h3>
+          <div class='spaceafter' id='inset1'>
+            <p class='listsmaller'>
+              <a href='http://forums.bukkit.org/threads/mech-appletree-v0-5-trees-now-drop-apples-new-dev-766.17613/'>AppleTree</a>
+              <br />
+              <a href='http://forums.bukkit.org/threads/gen-sec-econ-tp-admn-essentials-v2-2-a-collection-of-useful-commands-and-features-803.15312/'>Essentials</a>
+              <div id='inset1'>
+                Essentials Chat
+                <br />
+                Essentials Group Bridge
+                <br />
+                Essentials Group Manager
+                <br />
+                Essentials Protect
+              </div>
+              <a href=''>HeroicDeath</a>
+            </p>
+          </div>
+          <h3>Contribute</h3>
+          <p class='spaceafter'>
+            The server currently costs about $12 per month to run. We have somewhere in the neighborhood of 5 regular players. If each person donates about $3 a month, we can easily keep the server running.
+          </p>
+          <p>
+            <strong>Donations Received as of May 28, 2011 / Total Cost</strong>
+            <br />
+            $6.50 / $12
+          </p>
+          <p class='spaceafter'>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+          </p>
         </div>
         <div class='twocol last'></div>
       </div>
     </div>
-  </head>
+  </body>
 </html>
