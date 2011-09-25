@@ -82,26 +82,32 @@
         .fourcol
           %h2.spaceafter Byrng is a Minecraft server maintained by Splendorr. 
           %p.spaceafter
-            Currently Running Minecraft 1.7.3, with
-            %a{ :href => "http://bukkit.org" } Bukkit
-            build 1000. Pistons! Reduced memory leaks!
+            Currently Running Unmodded Minecraft 1.8.1, because Bukkit has proven unstable with the rapidity of the last few updates.
           %p.spaceafter 
             Read the 
             %a{ :href => "http://mcupdate.tumblr.com/"} changelog 
             when you first open Minecraft to see what has changed in each new version, and let me know if you encounter weirdness.
           %p.spaceafter
-            If you are new to the server and have not been added to the Regulars list yet, you will be unable to make any changes to the world. Send an email to the address shown in chat when you log in, and I can add you to the list. This is to prevent Griefers and Antagonists from Screwing with Stuff. Presumably.
+            In lieu of more sophisticated permissions control, I've set up a whitelist for the server. You cannot log in unless you are on the whitelist. To be added, please email simolinic+byrng@gmail.com with a request, including your relationship to any current members.
               
         .fourcol
           %h3 Server Address:
           %p.spaceafter 
             %a{ :href => "minecraft://www.minecraft.net/play.jsp?ip=209.15.226.33&port=27765"} 209.15.226.33:27765
+          %h3 
+            %a{ :href => "http://www.mumble.com/"} Mumble
+            Voice Chat Server:
+          %p.spaceafter 
+            209.15.226.35:3537
           %h3 Current Online Status:
           %a{:href => "http://minecraftviewer.com/servers/1424/view", :target => "_blank"}
             %img.bitabove.spaceafter{:alt => "Server Banner", :src => "http://cache.multiplayuk.com/b/1-1424-350x20-171717-303030-000000-FFFFFF.png", :style => "border:0;width:350px;height:20"}/
           %br
           %h3 Installed Plugins:
-          #inset1.spaceafter
+          None right now.
+          %br
+          %br
+          -# #inset1.spaceafter
             %p.listsmaller
               %a{ :href => "http://forums.bukkit.org/threads/gen-sec-econ-tp-admn-essentials-v2-2-a-collection-of-useful-commands-and-features-803.15312/"} Essentials
               #inset1
@@ -113,11 +119,30 @@
               %a{ :href => ""} HeroicDeath
           %h3 Contribute
           %p.spaceafter
-            The server currently costs about $12 per month to run. We have somewhere in the neighborhood of 5 regular players. If each person donates about $3 a month, we can easily keep the server running.
+            The server currently costs about $15 per month to run. We have somewhere in the neighborhood of 5 regular players. If each person donates about $4 a month, we can easily keep the server running.
           %p
-            %strong Donations Received since May 25, 2011 / Total Cost
+            %strong Donations Received Since May 25, 2011 
             %br
-            #green $26.50 / $24
+            %strong / Total Cost Through Nov. 25, 2011
+            %br
+            %h2#red.spaceafter
+              $
+              = 6 + 3.5 + 3 + 4 + 5 + 5 + 20
+              / $6 splendorr Initial ;
+              / $3.50 meekohi 5-25 ;
+              / $3.00 fubox 5-31 ;
+              / $4.00 akransom 6-3 ;
+              / $5.00 akransom 7-4 ;
+              / $5.00 meekohi 7/11 ;
+              / $20.00 Splendorr 9/25 ;
+              \/
+              $
+              = 37.36 + 45.41
+              / 1st Quarter + 2nd Quarter
+          %p.spaceafter We are billed in cycles of 3 months, currently at $45.41 per cycle after conversion from British Pounds. I was updating this monthly with cost-to-date, but it's a bit easier to track if I do it in 3-month cycles. I've paid for the server through November 25th, 2011, and count myself as having paid $26 for that period, or roughly 1/3rd of the costs.
+          %p.spaceafter Sorry I didn't update this for a few months; we were paid fully through July, and haven't received any donations for August or September.
+              
+              
           %p.spaceafter
             :erb
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
